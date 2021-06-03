@@ -1,0 +1,368 @@
+<html>
+
+<head>
+    <title>My website</title>
+    <link rel="stylesheet" href="newstylec.css">
+<link rel="stylesheet" href="aos.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <img src="plane4.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#s2">SERVICES</a></li>
+                <li> <a href="#s3">CONTACT US</a></li>
+                <li><a href="#" id="more">MORE</a></li>
+
+            </ul>
+
+
+
+
+            <div class="login">
+                <!--<a href="#" id="loginbutton">LOGIN</a> | <a href="#">REGISTER</a>-->
+                <button id="login">LOGIN</button>
+                <button id="dash">|</button>
+                <button id="register">REGISTER</button>
+            </div>
+
+ 
+
+
+
+        </nav>
+    </header>
+
+    <section >
+        <div class="header">
+        <video autoplay loop class="video-background" muted>
+            <source src="banner.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="heading">
+            <h1>Service Point.</h1>
+            <p> An efficient way to solve your problems </p>
+            <div class="button" id="s1">
+                <a href="page2.html" class="btn btn-start"> START</a>
+                <a href="#s2" class="btn btn-explore">EXPLORE</a>
+            </div>
+        </div>
+</div>
+   <button type="button" class="down-arrow" href="#s2"></button>
+  
+    </section>
+
+
+
+
+<div class="backtotop">
+            <div class="btt">
+                <a href="#" id="loginbutton">^</a>
+            </div>
+            <div class="top">
+                <h1 id="top">TOP</h1>
+            </div>
+        </div>
+        
+
+   
+   
+    <section class="explore" id="s2">
+
+        
+        <div class="flex-container">
+
+           
+            <div id="div1">
+                 <div id="div11">
+                <h1 id="head1">Lodge your complain</h1>
+            
+               
+                <h2 id="par1"> Lodge your complain and <br>create your case. </h2>
+                </div>
+               
+                <a data-aos="zoom-in" href="services.html" id="btnlearn2"> LEARN MORE</a>
+            
+            </div>
+
+
+            <div id="div2">
+               <div id="div21">
+                <h1 id="head4">Track your case</h1>
+                
+                <h2 id="par2">Track Your case and check it's<br>progress. </h2>
+                </div>
+                
+                <a data-aos="zoom-in" href="services.html" id="btnlearn2"> LEARN MORE</a>
+            </div>
+        
+            <div id="div3">
+ <div id="31">
+                <h1 id="head3">Interactive solutions</h1>
+                
+                <h2 id="par3">Interact with your service<br>engineer for more details.</h2>
+                </div>
+              <a data-aos="zoom-in" href="services.html" id="btnlearn2"> LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+    
+    
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script src="aos.js"></script>
+            <script>
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 50,
+    });
+  </script>
+
+    <section class="picture" id="s4">
+        <div class="pic">
+            <img src="laptop.jpg">
+        </div>
+    </section>
+
+
+
+    <section class="contact_us" id="s3">
+
+        <div class="contactcontainer">
+            <h1 id="head2">CONTACT US</h1>
+            <form  autocomplete="on">
+                <label for="fname"> Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="ENTER YOUR NAME..">
+
+                <label for="lname">Email</label>
+                <div>
+                    <input type="text" id="lname" name="lastname" placeholder="ENTER YOUR EMAIL..">
+                </div>
+                <label for="Department">Department</label>
+
+                <select id="Deparment" name="Department">
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biotecnology">Physics</option>
+                    <option value="Microbiology">Microbiology</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="WRITE SOMETHING.." style="height:200px"></textarea>
+
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="containerfooter">
+       <div class="cfooter">
+        <div class="icons">
+            <ul1>
+                <li1><a href="#"><img src="facebk.png"></a></li1>
+                <li1><a href="#"><img src="insta.png"></a></li1>
+                <li1> <a href="#"><img src="twitter.png"></a></li1>
+
+
+            </ul1>
+
+        </div>
+</div>
+
+
+    </section>
+
+
+
+
+    <div id="modallogin" class="bglogin">
+
+        <div class="login-form">
+
+            <div class="close">+</div>
+            <div class="arrowup">
+
+
+            </div>
+            <form name="loginform" method="post"  autocomplete="on" onsubmit="return validateloginform()">
+
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="Username" name="uname">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="   Password" required>
+                </div>
+                <div>
+                    <input type="submit" value="LOGIN">
+                </div>
+                <div id="forgotpass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <span class="close"></span>
+
+
+    <div id="modalreg" class="bgregister">
+        <div class="register-form">
+           <h1 id="headingregister">Create Your Account</h1>
+            <div class="closereg">+</div>
+
+            <form name="myform" method="post"  autocomplete="on" onsubmit="return validateform()" >
+               <div class="container-reg">
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" name="name">
+                </div>
+
+
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Enter Your Email adress" name ="email">
+                </div>
+
+
+                <div>
+                    <label >What category do you belong to </label>
+                    <select id="category" name="category" style="color: black;" >
+                        <option value="Student">Student</option>
+                        <option value="Teaching-staff">Teaching staff</option>
+                        <option value="Non-teaching staff">Non-teaching staff</option>
+                        <option value="Resident">Resident</option>
+                    </select>
+                </div>
+              
+              <div>
+                  <label for="password">Password</label>
+                  <input type="password" placeholder="   Create Password" name="password">
+              </div>
+              <div>
+                  <label for="repeatpassword">Repeat Password</label>
+                  <input type="password" placeholder="   Repeat password" name="repeatpass"  required>
+              </div>
+              <hr style=" border-color: black;">
+               <p><br>By creating an account you agree to our <a href="#" id="terms">Terms & Privacy.</a></p>
+
+    <button type="submit" value="register" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container-lgin">
+    <p >Already have an account? <a href="lg-in" id="lg-in">Log in.</a></p>
+  </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+  <!--  <div class="loader-wrapper" id="loading">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+-->
+<span class="closereg"></span>
+
+    <script>
+        var modal = document.getElementById("modallogin");
+        var btn = document.getElementById("login");
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+             window.onclick = function(event) {
+            if (event.target == bglogin) {
+                modal.style.display = "none";
+            }
+        }
+
+   
+        var modalreg = document.getElementById("modalreg");
+        var btn2 = document.getElementById("register");
+        var span2 = document.getElementsByClassName("closereg")[0];
+
+
+        btn2.onclick = function() {
+            modalreg.style.display = "block";
+        }
+
+
+        span2.onclick = function() {
+            modalreg.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == modalreg) {
+                modalreg.style.display = "none";
+            }
+        }
+       
+      function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;
+var repeatpass=document.myform.repeatpass.value;
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+          else if(password.length!=repeatpass.length){
+              alert("password lenght does not match");
+              return false;
+          }
+          else if(password.localeCompare(repeatpass)!==0){
+              alert("Passwords do not match");
+              return false;
+          }
+}  
+    
+      // var preloader= doc.getElementsByClassName('loader-wrapper');
+        //function myFunction(){
+          //  preloader.style.display='none';
+       // }
+      
+        
+        
+        function validateloginform() {
+            var username =document.forms["loginform"]["uname"].value;
+            if(username=="") {
+                alert("name must be filled");
+                return false;
+            }
+        }
+    </script>
+
+
+    
+
+
+
+</body>
+
+
+</html>
